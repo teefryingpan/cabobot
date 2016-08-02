@@ -65,6 +65,9 @@ function generateResponse() {
     'Work is for people who dont surf',
     'Dude you should have been here yesterday!',
     'Bro',
+    'Out of water, I am nothing.',
+    'When you’re itching for the waves, the only lotion is the ocean',
+    'If you ever stop surfing, Then you never did',
   ];  
   return responseArray[Math.floor(Math.random()*responseArray.length)];
 }
