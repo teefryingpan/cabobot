@@ -64,6 +64,7 @@ function generateResponse() {
     'Drugs? No thanks Im a surfer',
     'Work is for people who dont surf',
     'Dude you should have been here yesterday!',
+    'Bro',
   ];  
   return responseArray[Math.floor(Math.random()*responseArray.length)];
 }
