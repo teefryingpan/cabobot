@@ -5,7 +5,7 @@ var botID = process.env.BOT_ID;
 
 function respond() {
   var request = JSON.parse(this.req.chunks[0]),
-      botRegex = /[Dd]alebot/;
+      botRegex = /[Cc]abobot/;
 
   if(request.text && botRegex.test(request.text)) {
     this.res.writeHead(200);
@@ -56,30 +56,14 @@ function postMessage() {
 function generateResponse() {
   console.log('generating response');
   var responseArray = [
-    'This is shitty beer',
-    'is it still worth going?',
-    'sorry Im having sex with my girlfriend',
-    'yo where are the bonz',
-    'berkeley is a real college town',
-    'K',
-    'You all failed me',
-    'Somebody bring me a bone for the rally in the morning pls',
-    'Hurry up bonz, youre so slow',
-    'Come on, you know me better than that',
-    'dafuq?',
-    'Where is this? Can I come?',
-    'fucking tanicia',
-    'Everyone but clarpicz',
-    'boooooo',
-    'uhhhhh',
-    'Sanders definitely still has a chance',
-    'my girlfriend Kiely goes to Cal',
-    'Sippy are you kidding me?',
-    '*sighs*',
-    '*dramatic eye-roll* fineeeeeeeee.',
-    'You would be much more successful if you wrote a real letter to Hennessy and people in the administration',
-    
-    
+    'No waves, no glory',
+    'Lifes a wave',
+    'If it swells, ride it',
+    'If in doubt, paddle out',
+    'D-u-u-u-d-e',
+    'Drugs? No thanks Im a surfer',
+    'Work is for people who dont surf',
+    'Dude you should have been here yesterday!',
   ];  
   return responseArray[Math.floor(Math.random()*responseArray.length)];
 }
